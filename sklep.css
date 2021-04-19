@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@100&display=swap');
+html{
+    height:100%;
+}
+body{
+    background-repeat: no-repeat;
+    background: radial-gradient(midnightblue, black);
+    font-family: 'Cinzel', serif;
+}
+h1{
+    text-align: center;
+    color:#ffb31a;
+}
+.container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    flex-wrap: wrap;
+}
+img{
+    width: 15vh;
+    height: 15vh;
+    padding: 5vh;
+}
+p{
+    visibility: hidden;
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    margin: 0px;
+    opacity: 0;
+    transition: 2s;
+}
+.container div:hover p{
+    visibility:visible;
+    opacity: 1;
+}
+.container div{
+  padding: 2vh;
+}

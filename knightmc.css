@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+body{
+	margin:0;
+	padding:0;
+	background: radial-gradient(midnightblue, black);
+	font-family: 'Cinzel', serif;
+	background-repeat: no-repeat;
+	background-size: 100% 90vh;
+	background-image: url("knightmctlo4.png");
+	/* background-position: center; */
+}
+ul{
+	margin: 0;
+	list-style-type:none;
+	font-size: 20px;
+	margin-right: 9vh;
+	
+}
+ul a{
+	color: #ffb31a;
+	float: right;
+	margin-left: 8vh;
+}
+ul a:hover{
+	border-bottom: 2px solid #ffb31a;
+	animation: fade 1s ease-out infinite ;
+}
+#knightmc{
+	color: white;
+	font-size: 30px;
+	position: fixed;
+	left: 8vh;
+}
+.ramka{
+	border: 2px solid #ffb31a;
+	/* position: absolute; */
+	width: 60vh;
+	height: 45vh;
+	margin-left: 9vh;
+	margin-top: 24vh;
+	padding: 0.4vh;
+	box-shadow: 0px 0px 50px 20px black;
+	grid-column: 1/2;
+}
+.ramka .ramka2{
+	position: relative;
+	border: 2px solid #ffb31a;
+	width: 59.6vh;
+	height: 44.6vh;
+}
+.ramka h1{
+	color: white;
+	text-align: center;
+}
+.ramka p{
+	font-size: 28px;
+	margin: 20px;
+	color: white;
+}
+.divTryby h1{
+	color: #ffb31a;
+	font-size: 30px;
+	text-shadow: 1px 1px 1px black;
+	font-weight: normal;
+}
+.divTryby img{
+	width: 60px;
+	height: 60px;
+	filter: grayscale(100%);
+	
+}
+.divTryby{
+	position: absolute;
+	display: flex;
+	margin-top: 40vh;
+	justify-content: left;
+	width: 120vh;
+	height: 80vh;
+	flex-direction: column;
+	transform: translate(-50%,-10%);
+	left: 50%;
+}
+.mlg{
+	margin-left: 700px;
+}
+.bedwars img{
+	filter: grayscale(0%);
+}
+.divTryby div{
+	width: 40%;
+	text-align: center;
+}																
+#knight{
+	width: 350px;
+	height: 550px;
+	margin-top: 9vh; 
+	grid-column: 2/2;
+}
+header{
+	height: 90vh;
+	background: radial-gradient(rgba(25, 25, 112, 0.294), rgba(0, 0, 0, 0.747));
+}
+.snow{
+	height: 40px;
+	width: 40px;
+	/* animation:snow-shaking 10s linear infinite; */
+	animation: snow-falling 10s linear infinite;
+	margin-left: 50%;
+}
+.grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	width: 100%;
+	justify-items:center;
+  	align-items: center;
+}
+@keyframes fade{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}}
+@keyframes snow-falling{
+	0%{
+		transform: translateY(0px);
+	}
+	/* 50%{ */
+		/* transform: translateX(900px); */
+	/* } */
+	100%{
+		transform: translateY(900px);
+	}
+}
+/* @keyframes snow-shaking{ */
+	/* 0%{ */
+		/* transform: translateX(110px); */
+	/* } */
+	/* 50%{ */
+		/* transform: translateX(-110px); */
+	/* } */
+	/* 100%{ */
+		/* transform: translateY(900px); */
+	/* } */
+/* } */
+/* ::-webkit-scrollbar{ */
+	/* width: 25px; */
+/* } */
+/* ::-webkit-scrollbar-track{ */
+	/* background: black; */
+/* } */
+/* ::-webkit-scrollbar-thumb{ */
+	/* background-color: lightgrey; */
+	/* box-shadow: inset -5px -5px 1px grey; */
+/* } */
+/* ::-webkit-scrollbar-thumb:hover{ */
+	/* background-color:rgba(100,100,255,27); */
+	/* box-shadow: inset -5px -5px 1px #4d4dff; */
+/* } */
+.snow2{
+	margin-left: 30%;
+}
+::-webkit-scrollbar{
+	width: 15px;
+}
+::-webkit-scrollbar-track{
+	background: black;
+}
+::-webkit-scrollbar-thumb{
+	background-image: linear-gradient(midnightblue, mediumpurple);
+	box-shadow: 20px 20px 3px black;
+	border-radius: 20px;
+}
