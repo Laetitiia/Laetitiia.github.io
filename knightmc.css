@@ -1,25 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&display=swap');
+:root{
+	--zloty: #ffb31a;
+}
 body{
 	margin:0;
 	padding:0;
-	background: radial-gradient(midnightblue, black);
+	/* background: radial-gradient(midnightblue, black); */
+	/* background-color: #202020; */
 	font-family: 'Cinzel', serif;
 	background-repeat: no-repeat;
-	background-size: 100% 90vh;
-	background-image: url("knightmctlo4.png");
-	/* background-position: center; */
+	background-size: 100% 93vh;
+	background-image: url("img/knightmctloo.png");
 }
 ul{
 	margin: 0;
 	list-style-type:none;
 	font-size: 20px;
-	margin-right: 9vh;
+	display:flex;
+	gap: 3vh;
 	
 }
 ul a{
-	color: #ffb31a;
-	float: right;
-	margin-left: 8vh;
+	color: var(--zloty);
 }
 ul a:hover{
 	border-bottom: 2px solid #ffb31a;
@@ -28,19 +30,14 @@ ul a:hover{
 #knightmc{
 	color: white;
 	font-size: 30px;
-	position: fixed;
-	left: 8vh;
+	flex-basis: 60vh;
 }
 .ramka{
 	border: 2px solid #ffb31a;
-	/* position: absolute; */
 	width: 60vh;
 	height: 45vh;
-	margin-left: 9vh;
-	margin-top: 24vh;
 	padding: 0.4vh;
 	box-shadow: 0px 0px 50px 20px black;
-	grid-column: 1/2;
 }
 .ramka .ramka2{
 	position: relative;
@@ -66,39 +63,46 @@ ul a:hover{
 .divTryby img{
 	width: 60px;
 	height: 60px;
-	filter: grayscale(100%);
-	
 }
 .divTryby{
-	position: absolute;
 	display: flex;
-	margin-top: 40vh;
-	justify-content: left;
-	width: 120vh;
-	height: 80vh;
+	align-content: center;
 	flex-direction: column;
-	transform: translate(-50%,-10%);
-	left: 50%;
+	flex-wrap: wrap;
+	padding-top: 6vh;
+}
+.mrd{
+	filter: grayscale(100%);
 }
 .mlg{
 	margin-left: 700px;
+	filter: grayscale(100%);
 }
-.bedwars img{
-	filter: grayscale(0%);
+.bedwars{
+	filter: grayscale(100%);
+	margin-left: 700px;
 }
 .divTryby div{
 	width: 40%;
 	text-align: center;
 }																
 #knight{
-	width: 350px;
-	height: 550px;
-	margin-top: 9vh; 
-	grid-column: 2/2;
+	width: 34vh;
+	height: 54vh;
 }
+.naKnight{
+	width: 42vh;
+}
+
 header{
-	height: 90vh;
+	display: flex;
+	justify-content: space-evenly;
+	flex-direction: row;
+	height: 93vh;
 	background: radial-gradient(rgba(25, 25, 112, 0.294), rgba(0, 0, 0, 0.747));
+	gap: 3vh 40vh;
+	flex-wrap: wrap;
+
 }
 .snow{
 	height: 40px;
@@ -106,13 +110,6 @@ header{
 	/* animation:snow-shaking 10s linear infinite; */
 	animation: snow-falling 10s linear infinite;
 	margin-left: 50%;
-}
-.grid{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	width: 100%;
-	justify-items:center;
-  	align-items: center;
 }
 @keyframes fade{
   0% {
@@ -143,20 +140,20 @@ header{
 		/* transform: translateY(900px); */
 	/* } */
 /* } */
-/* ::-webkit-scrollbar{ */
-	/* width: 25px; */
-/* } */
-/* ::-webkit-scrollbar-track{ */
-	/* background: black; */
-/* } */
-/* ::-webkit-scrollbar-thumb{ */
-	/* background-color: lightgrey; */
-	/* box-shadow: inset -5px -5px 1px grey; */
-/* } */
-/* ::-webkit-scrollbar-thumb:hover{ */
-	/* background-color:rgba(100,100,255,27); */
-	/* box-shadow: inset -5px -5px 1px #4d4dff; */
-/* } */
+/* ::-webkit-scrollbar{ 
+	width: 25px;
+}
+::-webkit-scrollbar-track{
+	 background: black; 
+ } 
+ ::-webkit-scrollbar-thumb{ 
+	 background-color: lightgrey; 
+	 box-shadow: inset -5px -5px 1px grey; 
+ } 
+::-webkit-scrollbar-thumb:hover{
+	/background-color:rgba(100,100,255,27); 
+	 box-shadow: inset -5px -5px 1px #4d4dff; 
+ } */
 .snow2{
 	margin-left: 30%;
 }
@@ -170,4 +167,19 @@ header{
 	background-image: linear-gradient(midnightblue, mediumpurple);
 	box-shadow: 20px 20px 3px black;
 	border-radius: 20px;
+}
+@media (orientation: portrait) {
+	.bedwars{
+		margin-left: 0;
+	}
+	.mlg{
+		margin-left: 0;
+	}
+	.ramka p{
+		font-size: 25px;
+	}
+	.divTryby{
+		margin-top: 30vh;
+		gap: 10vh;
+	}
 }

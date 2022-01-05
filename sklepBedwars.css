@@ -2,6 +2,7 @@
 body{
     margin: 0;
     padding: 0;
+    background: radial-gradient(midnightblue, black);
 }
 .container{
     display: flex;
@@ -14,11 +15,13 @@ p{
     font-family: 'Alegreya Sans SC', sans-serif;
     text-align: center;
     margin: 0vh;
-    color: black;
+    color: white;
     font-size: 30px;
 }
 img{
-    border: 2px solid #ffb31a;
+    /* border: 2px solid #ffb31a; */
+    width: 33vh;
+    height: 28vh;
 }
 .container div{
     margin: 10vh;
