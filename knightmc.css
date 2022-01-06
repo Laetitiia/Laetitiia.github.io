@@ -9,8 +9,8 @@ body{
 	/* background-color: #202020; */
 	font-family: 'Cinzel', serif;
 	background-repeat: no-repeat;
-	background-size: 100% 93vh;
-	background-image: url("img/knightmctloo.png");
+	/* background-size: contain 93vh; */
+	/* background-image: url("img/knightmctloo.png"); */
 	overflow: overlay;
 	scroll-behavior: smooth;
 }
@@ -44,7 +44,7 @@ ul a:hover{
 	display:flex;
 }
 .ramka .ramka2{
-	position: relative;
+	/* position: relative; */
 	border: 2px solid #ffb31a;
 	width: 59.6vh;
 	height: 44.6vh;
@@ -106,6 +106,7 @@ header{
 	background: radial-gradient(rgba(25, 25, 112, 0.294), rgba(0, 0, 0, 0.747));
 	gap: 3vh 40vh;
 	flex-wrap: wrap;
+	background-image: url("img/knightmctloo.png");
 
 }
 /* .snow{
@@ -182,7 +183,15 @@ header{
 		margin-left: 0;
 	}
 	.ramka p{
-		font-size: 25px;
+		font-size: 15px;
+	}
+	.ramka{
+		width: 50vh;
+		height: 35vh;
+	}
+	.ramka .ramka2{
+		width: 49.6vh;
+		height: 34.6vh;
 	}
 	.divTryby{
 		margin-top: 30vh;
@@ -190,5 +199,15 @@ header{
 	}
 	#knightmc{
 		flex-basis:0;
+	}
+	nav{
+		display:none;
+	}
+	#knight{
+		width: 20vh;
+		height: 34vh;
+	}
+	.naKnight{
+		justify-content:center;
 	}
 }
