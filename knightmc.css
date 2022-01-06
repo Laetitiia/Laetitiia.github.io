@@ -186,13 +186,19 @@ header{
 	}
 	.ramka p{
 		font-size: 15px;
+		margin: 2vh;
+	}
+	.ramka h1{
+		font-size: 20px;
+		padding: 1vh;
+		margin:0;
 	}
 	.ramka{
-		width: 46vh;
+		width: 36vh;
 		height: 31vh;
 	}
 	.ramka .ramka2{
-		width: 45.6vh;
+		width: 35.6vh;
 		height: 30.6vh;
 	}
 	.divTryby{
