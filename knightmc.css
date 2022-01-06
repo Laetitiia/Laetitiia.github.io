@@ -11,6 +11,8 @@ body{
 	background-repeat: no-repeat;
 	background-size: 100% 93vh;
 	background-image: url("img/knightmctloo.png");
+	overflow: overlay;
+	scroll-behavior: smooth;
 }
 ul{
 	margin: 0;
@@ -38,6 +40,8 @@ ul a:hover{
 	height: 45vh;
 	padding: 0.4vh;
 	box-shadow: 0px 0px 50px 20px black;
+	flex-shrink: 30;
+	display:flex;
 }
 .ramka .ramka2{
 	position: relative;
@@ -104,13 +108,13 @@ header{
 	flex-wrap: wrap;
 
 }
-.snow{
+/* .snow{
 	height: 40px;
 	width: 40px;
-	/* animation:snow-shaking 10s linear infinite; */
+	
 	animation: snow-falling 10s linear infinite;
 	margin-left: 50%;
-}
+} */
 @keyframes fade{
   0% {
     opacity:0;
@@ -140,23 +144,25 @@ header{
 		/* transform: translateY(900px); */
 	/* } */
 /* } */
-/* ::-webkit-scrollbar{ 
-	width: 25px;
-}
-::-webkit-scrollbar-track{
-	 background: black; 
- } 
- ::-webkit-scrollbar-thumb{ 
-	 background-color: lightgrey; 
-	 box-shadow: inset -5px -5px 1px grey; 
- } 
-::-webkit-scrollbar-thumb:hover{
-	/background-color:rgba(100,100,255,27); 
-	 box-shadow: inset -5px -5px 1px #4d4dff; 
+/* body::-webkit-scrollbar{
+	width: 1em;
+ }
+ body::-webkit-scrollbar-track{
+	
+ }
+
+ body::-webkit-scrollbar-thumb{
+	background-color: #c0c0c0;
+	box-shadow: inset 0px -3px 0px 0px #a0a0a0;
+	box-shadow: inset -2px -2px 0px 0px #5e5c5b;
+ }body::-webkit-scrollbar-thumb:hover{
+	background-color: #8e95c2;
+ }body::-webkit-scrollbar-thumb:active{
+	background-color: #9794d9;
  } */
-.snow2{
+/* .snow2{
 	margin-left: 30%;
-}
+} */
 ::-webkit-scrollbar{
 	width: 15px;
 }
@@ -181,5 +187,8 @@ header{
 	.divTryby{
 		margin-top: 30vh;
 		gap: 10vh;
+	}
+	#knightmc{
+		flex-basis:0;
 	}
 }

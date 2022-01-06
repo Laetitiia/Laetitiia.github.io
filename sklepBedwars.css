@@ -26,3 +26,12 @@ img{
 .container div{
     margin: 10vh;
 }
+@media (orientation: portrait){
+    p{
+        font-size: 50px;
+    }
+    img{
+        width: 29vh;
+        height: 24vh;
+    }
+}
